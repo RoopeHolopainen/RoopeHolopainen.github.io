@@ -5,17 +5,17 @@ const timeEl = document.querySelector('.time')
 const dateEl = document.querySelector('.date')
 const toggle = document.querySelector('.toggle')
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const days = ["Sunnuntai", "Maanantai", "Tiistai", "Keskiviikko", "Torstai", "Perjantai", "Lauantai"];
+const months = ["Tammi", "Helmi", "Maalis", "Huhti", "Touko", "Kesä", "Heinä", "Elo", "Syys", "Loka", "Marras", "Joulu"];
 
 toggle.addEventListener('click', (e) => {
     const html = document.querySelector('html')
     if(html.classList.contains('dark')) {
         html.classList.remove('dark')
-        e.target.innerHTML = 'Dark mode'
+        e.target.innerHTML = 'Vaihda Väri'
     } else {
         html.classList.add('dark')
-        e.target.innerHTML = 'Light mode'
+        e.target.innerHTML = 'Vaihda Väri'
     }
 })
 
@@ -34,7 +34,7 @@ function setTime() {
     minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`
     secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
 
-    timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
+    timeEl.innerHTML = `${hours}:${minutes < 10 ? `0${minutes}` : minutes} `
     dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
 }
 

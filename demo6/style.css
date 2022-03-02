@@ -5,8 +5,9 @@
 }
 
 :root {
-  --primary-color: #000;
-  --secondary-color: #fff;
+  --primary-color: rgb(52, 33, 138);
+  --secondary-color: rgb(209, 200, 200);
+  
 }
 
 html {
@@ -14,17 +15,17 @@ html {
 }
 
 html.dark {
-  --primary-color: #fff;
-  --secondary-color: #333;
+  --primary-color: rgb(145, 108, 140);
+  --secondary-color: rgb(99, 76, 96);
 }
 
 html.dark {
-  background-color: #111;
+  background-color: rgb(82, 78, 78);
   color: var(--primary-color);
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +33,10 @@ body {
   overflow: hidden;
   margin: 0;
 }
-
+#roope{
+  width: 200px;
+  position:absolute
+}
 .toggle {
   cursor: pointer;
   background-color: var(--primary-color);
@@ -42,6 +46,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   top: 100px;
+  font-size: 30px;
 }
 
 .toggle:focus {
@@ -53,10 +58,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 300px;
 }
 
 .clock {
-  position: relative;
+  position:static;
   width: 200px;
   height: 200px;
 }
@@ -74,21 +80,22 @@ body {
 
 .needle.hour {
   transform: translate(-50%, -100%) rotate(0deg);
+  height: 15
 }
 
 .needle.minute {
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 100px;
+  height: 90px;
 }
 
 .needle.second {
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 100px;
-  background-color: #e74c3c;
+  height: 60px;
+  
 }
 
 .center-point {
-  background-color: #e74c3c;
+  
   width: 10px;
   height: 10px;
   position: absolute;
@@ -96,6 +103,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  
+
 }
 
 .center-point::after {
@@ -111,12 +120,13 @@ body {
 }
 
 .time {
-  font-size: 60px;
+  font-size: 40px;
+  margin-bottom: 300px;
 }
 
 .date {
-  color: #aaa;
-  font-size: 14px;
+  color: rgb(190, 180, 180);
+  font-size: 30px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
@@ -125,12 +135,12 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 50%;
-  height: 18px;
-  width: 18px;
+  height: 30px;
+  width: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 18px;
   transition: all 0.5s ease-in;
-  font-size: 12px;
+  font-size: 22px;
 }
