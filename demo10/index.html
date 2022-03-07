@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+    <meta charset= "UTF-8" />
+    <title>demo9</title>
+    <script type="text/javascript" language="javascript" src="kirjautuminen.js"></script>
+</head>
 
+<body>
+    <p id="tervetuloa_teksti" style="display: none;">Tervetuloa </p>
+    <form id="kirjautumis_lomake">
+        <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
+        <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
+        
+    </form>
+
+    <button style="display: none;" id="kirjauduUlos"onclick="kirjauduUlos()">Kirjaudu ulos</button>
+</body>
 <head>
     <meta charset="utf-8">
     <title>Gymnast - Gym Website Template</title>
@@ -20,21 +34,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
 </head>
-<meta charset= "UTF-8" />
-<title>demo9</title>
-<script type="text/javascript" language="javascript" src="kirjautuminen.js"></script>
-</head>
 
-<body>
-<p id="tervetuloa_teksti" style="display: none;">Tervetuloa </p>
-<form id="kirjautumis_lomake">
-    <input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
-    <input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onClick="kirjaudu()" />
-    
-</form>
-
-<button style="display: none;" id="kirjauduUlos"onclick="kirjauduUlos()">Kirjaudu ulos</button>
-</body>
 <body class="bg-white">
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
