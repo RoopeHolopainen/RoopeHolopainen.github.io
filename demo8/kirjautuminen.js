@@ -6,3 +6,6 @@ function onkoKirjautunut(){
         document.getElementById("tervetuloa_teksti").textContent +=' Roope!';
     }
 }
+function kirjaudu(){
+    localStorage.setItem("nimi", document.getElementById("nimi").value);
+}
