@@ -14,6 +14,7 @@ function kirjaudu(){
 }
 function kirjauduUlos(){
     localStorage.clear();
+    //mddddddddddd
     document.getElementById("kirjautumis_lomake").style.display = "block";
     document.getElementById("kirjauduUlos").style.display = "none";
     document.getElementById("tervetuloa_teksti").style.display = "none";
