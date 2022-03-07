@@ -80,17 +80,17 @@ body {
 
 .needle.hour {
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 15
+  height: 50px
 }
 
 .needle.minute {
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 90px;
+  height: 70px;
 }
 
 .needle.second {
   transform: translate(-50%, -100%) rotate(0deg);
-  height: 60px;
+  height: 90px;
   
 }
 
